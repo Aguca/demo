@@ -3,7 +3,7 @@ package com.example.demo.servicio.Imp;
 import com.example.demo.modelo.EntidadPedido;
 import com.example.demo.modelo.EntidadUsuario;
 import com.example.demo.repositorio.RepositorioPedidos;
-import com.example.demo.repositorio.RepositorioUsuarios;
+import com.example.demo.repositorio.RepositorioServicioUsuario;
 import com.example.demo.servicio.ServicioPedidos;
 import org.springframework.stereotype.Service;
 
@@ -15,10 +15,10 @@ import java.util.Optional;
 public class ServicioPedidosImp implements ServicioPedidos {
 
     private final RepositorioPedidos repositorioPedidos;
-    private final RepositorioUsuarios repositorioUsuarios;
+    private final RepositorioServicioUsuario repositorioUsuarios;
 
     public ServicioPedidosImp(RepositorioPedidos repositorioPedidos,
-                              RepositorioUsuarios repositorioUsuarios) {
+                              RepositorioServicioUsuario repositorioUsuarios) {
         this.repositorioPedidos = repositorioPedidos;
         this.repositorioUsuarios = repositorioUsuarios;
     }
